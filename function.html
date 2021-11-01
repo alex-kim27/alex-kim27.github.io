@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+	.Steve {
+		width: 250px;
+		height: 250px;
+		display: inline-grid;
+		position: relative;
+		background-repeat: no-repeat;
+		background-image: url(whale.png);
+
+	}
+
+	
+
+</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	function makeSteve () {
+		var Steve = document.createElement("div")
+		document.body.appendChild(Steve)
+			Steve.classList.add("Steve");
+	}
+
+setInterval(makeSteve, 100);
+	
+
+
+</script>
+
+</body>
+</html>
