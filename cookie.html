@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<style type="text/css">
+			body{
+				background-color: GoldenRod;
+			}
+			h1{
+				text-align: center;
+			}
+		</style>
+
+	<title></title>
+</head>
+<body>
+
+<h1>
+	Click to change the cookie
+</h1>
+
+<script type="text/javascript">
+	function makeCookie(){
+		var cookie = document.createElement("div")
+		document.body.appendChild(cookie)
+		cookie.style.backgroundImage = "url(cookie.gif)";
+		cookie.style.height = "100px";
+		cookie.style.width = "100px";
+		cookie.style.backgroundSize = "cover";
+		cookie.style.display = "inline-grid";
+		cookie.addEventListener("click", function(){
+			cookie.style.backgroundImage = "url(dinosaur.png)"
+
+		})
+
+		
+	}
+	
+setInterval(makeCookie, 250)
+</script>
+
+</body>
+</html>
