@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#drizzy{
+		width: 300px;
+		height: 300px;
+		background-image: url(drake.png);
+		background-repeat: no-repeat;
+	}
+
+	#yeeezy{
+		width: 300px;
+		height: 300px;
+		background-image: url(kanye.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		
+	}
+
+	#ariana{
+		width: 300px;
+		height: 300px;
+		background-image: url(ariana.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	#abel{
+		width: 300px;
+		height: 300px;
+		background-image: url(weeknd.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.littleYees{
+		width: 50px;
+		height: 50px;
+		background-image: url(kanye.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: inline-block;
+	}
+
+
+
+
+	.littledrakes{
+		width: 50px;
+		height: 50px;
+		background-image: url(drake.png);
+		background-repeat: no-repeat;
+		background-size:contain;
+		display: inline-block;
+	}
+
+	.littleArianas{
+		width: 50px;
+		height: 50px;
+		background-image: url(ariana.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: inline-block;
+	}
+
+	.littleWeeknds{
+		width: 50px;
+		height: 50px;
+		background-image: url(weeknd.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: inline-block;
+	}
+
+</style>
+	<title></title>
+</head>
+<body>
+
+<div id="drizzy"></div>
+<div id="container1"></div>
+<div id="yeeezy"></div>
+<div id="container2"></div>
+<div id="ariana"></div>
+<div id="container3"></div>
+<div id="abel"></div>
+<div id="container4 "></div>
+
+<script type="text/javascript">
+
+var drake = document.getElementById("drizzy")
+
+var ye = document.getElementById("yeeezy")
+
+var ariana = document.getElementById("ariana")
+
+var weeknd = document.getElementById("abel")
+
+function createLittleDrakes (){
+	console.log("hi")
+	var littleDrakes = document.createElement("div");
+	container1.appendChild(littleDrakes)
+
+	littleDrakes.classList.add("littledrakes");
+
+
+}
+
+	drake.addEventListener("click", function(){
+		for(var i =1; i<45; i = i+1){
+			createLittleDrakes();
+		}
+	})
+
+function createLittleYees (){
+	var littleYees = document.createElement("div")
+	container2.appendChild(littleYees)
+
+	littleYees.classList.add("littleYees")
+}
+
+	yeeezy.addEventListener("click", function(){
+		for(var i =1; i<21; i =i+1){
+			createLittleYees();
+		}
+
+
+	})
+
+function createLittleGrandes (){
+	var littleArianas = document.createElement("div")
+	container3.appendChild(littleArianas)
+
+	littleArianas.classList.add("littleArianas")
+
+}
+
+	ariana.addEventListener("click", function(){
+		for(var i=1; i<29; i =i+1){
+			createLittleGrandes();
+		}
+	})
+
+function createLittleWeeknds (){
+	var littleWeeknds = document.createElement("div")
+	container4.appendChild(littleWeeknds)
+
+	littleWeeknds.classList.add("littleWeeknds")
+}	
+
+	abel.addEventListener("click", function(){
+		for(var i=1; i<28; i =i+1){
+			createLittleWeeknds();
+		}
+
+
+	})
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

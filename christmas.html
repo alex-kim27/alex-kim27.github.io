@@ -79,6 +79,53 @@
 
 	}
 
+	table.addEventListener("mousemove", function(event) {
+		console.log(event)
+		
+	});
+
+	table.appendChild(fooditem);
+
+	fooditem.style.left = event.clientX - 37.5 + "px";
+	fooditem.style.top = event.clientY -37.5 + "px";
+
+
+
+	burrito.addEventListener("click", function() {
+
+		image = "burrito.png"
+		
+	});
+
+	steak.addEventListener("click", function(){
+
+		image = "steak.png"
+
+	});
+
+	potato.addEventListener("click", function(){
+
+		image = "potato.png"
+	});
+
+	mac.addEventListener("click", function(){
+
+		image = "mac.png"
+	});
+
+	knife.addEventListener("click", function(){
+
+		image = "knife.png"
+	});
+
+	fork.addEventListener("click", function(){
+
+		image = "fork.png"
+	});
+
+	table.addEventListener("click", placeFood);
+
+
 </script>
 
 
