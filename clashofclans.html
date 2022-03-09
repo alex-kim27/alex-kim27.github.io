@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+
+
+	
+	body{
+		background-image: url(clans.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
+	#villager{
+		left: 200px;
+		top: 600px;
+		position: relative;
+		width: 500px;
+		height: 500px;
+		background-image: url(villager.png);
+		background-repeat: no-repeat;
+	}
+
+	#bubble{
+		
+		left: 315px;
+		width: 200px;
+		height: 200px;
+		position: relative;
+		background-repeat: no-repeat;
+		padding: 20px;
+		background-size: cover;
+		background-image: url(speechbubble.png);
+		color: blue;
+		
+
+	}
+
+</style>
+	<title></title>
+</head>
+<body>
+
+<div id="villager"></div>
+<div id="bubble"></div>
+
+<script type="text/javascript">
+	
+	
+
+
+	var text = ["thank you for playing clash of clans with me", "thank you for being a great member of house", "thank you for doing the wordle with me", "thank you for making my days better"]
+	var x = -1;
+
+
+	villager.addEventListener("click",
+		function(){
+			x=x+1
+			bubble.innerText=text[x]
+
+			if(x==3){x=-1}
+
+		}
+		)
+
+
+
+
+
+</script>
+
+</body>
+</html>
