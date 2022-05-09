@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.virus{
+			height: 100px;
+			width: 100px;
+			background-image: url(marty.png);
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+
+		}
+
+		#input{
+			height: 100px;
+			width: 100px;
+		}
+
+	</style>
+	<title></title>
+</head>
+<body>
+<div id="input"></div>
+<div id="sound"></div>
+
+<div></div>
+<script type="text/javascript">
+	var pew = document.getElementById('sound');
+	var input = document.getElementById('input')
+	var x = 0
+
+	function createCorona(){
+		var corona = document.createElement('div');
+		document.body.appendChild(corona);
+		corona.classList.add("virus");
+
+
+	function changePosition(){
+		corona.style.left = 1000 * Math.random()+"px";
+		corona.style.top = 1000 * Math.random() + "px"; 
+	};
+
+	setInterval(changePosition, 2000); 
+
+	corona.addEventListener("click", function (){
+		console.log(input);
+		x = x+1;
+		input.innerText=x;
+		corona.classList.remove("virus");
+		
+	});
+
+}
+setInterval(createCorona, 1000);
+
+
+</script>
+</body>
+</html>

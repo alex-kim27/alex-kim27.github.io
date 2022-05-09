@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		.text{
+			font-size: 25px;
+			opacity: 0%;
+		}
+
+
+
+	</style>
+
+	<title></title>
+</head>
+<body>
+<div class="text">You know, I was
+I was wondering, you know
+If you could keep on
+Because the force
+It's got a lot of power
+And it make me feel like ah
+It make me feel like... oooh!</div>
+<p>
+	
+</p>
+
+<div class="text">Lovely is the feeling now
+Fever, temperatures rising now
+Power is the force, the vow
+That makes it happen, it asks no questions why
+So get closer
+To my body now
+Just love me
+'Til you don't know how</div>
+<p></p>
+<div class="text">Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough</div>
+<p></p>
+<div class="text">Touch me and I feel on fire
+Ain't nothing like a love desire
+I'm melting (I'm melting)
+Like hot candle wax
+Sensation (oh sensation)
+Lovely where we're at
+So let love take us through the hours
+I won't be complaining
+'Cause this is love power</div>
+<p></p>
+<div class="text">
+	Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+</div>
+<p></p>
+
+<div class="text">
+	Heartbreak enemy despise
+Eternal (oh, eternal)
+Love shines in my eyes
+So let love take us through the hours
+I won't be complaining
+'Cause your love is alright, alright
+</div>
+<p></p>
+<div class="text">
+	Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+</div>
+<p></p>
+
+<div class="text">Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough</div>
+<p></p>
+
+<div class="text">
+	Lovely is the feeling now
+I won't be complaining
+The force is love power
+</div>
+
+<div class="text">
+	Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+</div>
+<p></p>
+
+<div class="text">
+	Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+Keep on with the force don't stop
+Don't stop 'til you get enough
+</div>
+
+
+<!-- steps in english:
+click on something
+song starts playing
+lyrics come on the screen when they are in the song -->
+
+<audio id="song" src="mj.m4a"></audio>
+
+<script type="text/javascript">
+	var song = document.getElementById('song');
+
+	var text = document.getElementsByClassName('text')
+
+	text = Array.from(text)
+
+	document.addEventListener("click", function() {
+		text.forEach(function(elementInArray){
+			elementInArray.style.opacity = "1";
+		})
+		song.play()
+		console.log(text)
+	})
+</script>
+</body>
+</html>
