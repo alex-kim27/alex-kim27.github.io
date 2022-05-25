@@ -68,33 +68,34 @@
 	var image;
 
 
-
 	function placeFood() {
+			var item = document.createElement("div");
 
-		var item = document.createElement("fooditem");
+		table.appendChild(item);
+		item.style.left = event.clientX - 37.5 + "px";
+		item.style.top = event.clientY - 37.5 + "px";
+		
 		item.style.width = "75px";
 		item.style.height = "75px";
 		item.style.position = "absolute";
-		item.style.backgroundSize = "cover";
+		item.style.backgroundSize = "contain";
+		item.style.backgroundRepeat = "no-repeat"
+		item.style.backgroundImage = "url("+ image + ")";
 
 	}
 
-	table.addEventListener("mousemove", function(event) {
-		console.log(event)
-		
-	});
+	// table.addEventListener("mousemove", function(event) {
+	// 	console.log(event)
 
-	table.appendChild(fooditem);
+	// });
 
-	fooditem.style.left = event.clientX - 37.5 + "px";
-	fooditem.style.top = event.clientY -37.5 + "px";
+	
 
 
 
 	burrito.addEventListener("click", function() {
 
 		image = "burrito.png"
-		
 	});
 
 	steak.addEventListener("click", function(){
